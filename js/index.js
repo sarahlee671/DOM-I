@@ -55,20 +55,9 @@ headline.innerHTML = siteContent.cta["h1"]
 const ctaPic = document.querySelector('.cta-text button');
 ctaPic.innerHTML = siteContent.cta["button"]
 
-// const ctaImg = document.getElementById("cta-img");
-// ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
-
 
 document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"])
 
-// document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["features-h4"])
-
-// document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["features-content"])
-
-
-// document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["about-h4"])
-
-// document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["about-content"])
 
 const contentHeaders = document.querySelectorAll(".text-content h4");
 contentHeaders[0].innerHTML = siteContent["main-content"]["features-h4"]
@@ -85,3 +74,12 @@ contentPara[3].innerHTML = siteContent["main-content"]["product-content"]
 contentPara[4].innerHTML = siteContent["main-content"]["vision-content"]
 
 document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+document.querySelector('.contact h4').innerHTML =siteContent.contact["contact-h4"]
+
+const contactPara = document.querySelectorAll(".contact p");
+contactPara[0].innerHTML = siteContent["contact"]["address"]
+contactPara[1].innerHTML = siteContent["contact"]["phone"]
+contactPara[2].innerHTML = siteContent["contact"]["email"]
+
+document.querySelector("footer p").innerHTML = siteContent["footer"]["copyright"]
