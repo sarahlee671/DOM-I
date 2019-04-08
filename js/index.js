@@ -42,11 +42,28 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navLinks = document.querySelectorAll('header nav a');
-
 navLinks[0].innerHTML = siteContent.nav["nav-item-1"]
 navLinks[1].innerHTML = siteContent.nav["nav-item-2"]
 navLinks[2].innerHTML = siteContent.nav["nav-item-3"]
 navLinks[3].innerHTML = siteContent.nav["nav-item-4"]
 navLinks[4].innerHTML = siteContent.nav["nav-item-5"]
 navLinks[5].innerHTML = siteContent.nav["nav-item-6"]
+
+const headline = document.querySelector('.cta-text h1');
+headline.innerHTML = siteContent.cta["h1"]
+
+const ctaPic = document.querySelector('.cta-text button');
+ctaPic.innerHTML = siteContent.cta["button"]
+
+// const ctaImg = document.getElementById("cta-img");
+// ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"])
+
+document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["features-h4"])
+
+document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["features-content"])
+
+
  
