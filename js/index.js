@@ -61,9 +61,27 @@ ctaPic.innerHTML = siteContent.cta["button"]
 
 document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"])
 
-document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["features-h4"])
+// document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["features-h4"])
 
-document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["features-content"])
+// document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["features-content"])
 
 
- 
+// document.querySelector('.main-content .top-content .text-content h4').innerHTML = (siteContent["main-content"]["about-h4"])
+
+// document.querySelector('.main-content .top-content .text-content p').innerHTML = (siteContent["main-content"]["about-content"])
+
+const contentHeaders = document.querySelectorAll(".text-content h4");
+contentHeaders[0].innerHTML = siteContent["main-content"]["features-h4"]
+contentHeaders[1].innerHTML = siteContent["main-content"]["about-h4"]
+contentHeaders[2].innerHTML = siteContent["main-content"]["services-h4"]
+contentHeaders[3].innerHTML = siteContent["main-content"]["product-h4"]
+contentHeaders[4].innerHTML = siteContent["main-content"]["vision-h4"]
+
+const contentPara = document.querySelectorAll(".text-content p")
+contentPara[0].innerHTML = siteContent["main-content"]["features-content"]
+contentPara[1].innerHTML = siteContent["main-content"]["about-content"]
+contentPara[2].innerHTML = siteContent["main-content"]["services-content"]
+contentPara[3].innerHTML = siteContent["main-content"]["product-content"]
+contentPara[4].innerHTML = siteContent["main-content"]["vision-content"]
+
+document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"])
