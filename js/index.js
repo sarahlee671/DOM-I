@@ -83,3 +83,7 @@ contactPara[1].innerHTML = siteContent["contact"]["phone"]
 contactPara[2].innerHTML = siteContent["contact"]["email"]
 
 document.querySelector("footer p").innerHTML = siteContent["footer"]["copyright"]
+
+navLinks.forEach(function(link){
+  link.style.color = "green"
+})
