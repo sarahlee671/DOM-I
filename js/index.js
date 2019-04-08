@@ -87,3 +87,14 @@ document.querySelector("footer p").innerHTML = siteContent["footer"]["copyright"
 navLinks.forEach(function(link){
   link.style.color = "green"
 })
+
+const nav = document.querySelector('nav')
+
+const faq = document.createElement('a')
+faq.textContent = "FAQ"
+nav.appendChild(faq)
+
+const added = document.createElement('a')
+added.textContent = "Added"
+nav.prepend(added)
+
