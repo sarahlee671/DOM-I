@@ -40,3 +40,61 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navLinks = document.querySelectorAll('header nav a');
+navLinks[0].innerHTML = siteContent.nav["nav-item-1"]
+navLinks[1].innerHTML = siteContent.nav["nav-item-2"]
+navLinks[2].innerHTML = siteContent.nav["nav-item-3"]
+navLinks[3].innerHTML = siteContent.nav["nav-item-4"]
+navLinks[4].innerHTML = siteContent.nav["nav-item-5"]
+navLinks[5].innerHTML = siteContent.nav["nav-item-6"]
+
+const headline = document.querySelector('.cta-text h1');
+headline.innerHTML = siteContent.cta["h1"]
+
+const ctaPic = document.querySelector('.cta-text button');
+ctaPic.innerHTML = siteContent.cta["button"]
+
+
+document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"])
+
+
+const contentHeaders = document.querySelectorAll(".text-content h4");
+contentHeaders[0].innerHTML = siteContent["main-content"]["features-h4"]
+contentHeaders[1].innerHTML = siteContent["main-content"]["about-h4"]
+contentHeaders[2].innerHTML = siteContent["main-content"]["services-h4"]
+contentHeaders[3].innerHTML = siteContent["main-content"]["product-h4"]
+contentHeaders[4].innerHTML = siteContent["main-content"]["vision-h4"]
+
+const contentPara = document.querySelectorAll(".text-content p")
+contentPara[0].innerHTML = siteContent["main-content"]["features-content"]
+contentPara[1].innerHTML = siteContent["main-content"]["about-content"]
+contentPara[2].innerHTML = siteContent["main-content"]["services-content"]
+contentPara[3].innerHTML = siteContent["main-content"]["product-content"]
+contentPara[4].innerHTML = siteContent["main-content"]["vision-content"]
+
+document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+document.querySelector('.contact h4').innerHTML =siteContent.contact["contact-h4"]
+
+const contactPara = document.querySelectorAll(".contact p");
+contactPara[0].innerHTML = siteContent["contact"]["address"]
+contactPara[1].innerHTML = siteContent["contact"]["phone"]
+contactPara[2].innerHTML = siteContent["contact"]["email"]
+
+document.querySelector("footer p").innerHTML = siteContent["footer"]["copyright"]
+
+navLinks.forEach(function(link){
+  link.style.color = "green"
+})
+
+const nav = document.querySelector('nav')
+
+const faq = document.createElement('a')
+faq.textContent = "FAQ"
+nav.appendChild(faq)
+
+const added = document.createElement('a')
+added.textContent = "Added"
+nav.prepend(added)
+
